@@ -6,7 +6,7 @@ namespace FirstApp
 {
     public class UserFollowingInputModel
     {
-        public UserFollowingInputModel(int idUserFollower, int idUserFollowee, string email)
+        public UserFollowingInputModel(string idUserFollower, string idUserFollowee, string email)
         {
             IdUserFollower = idUserFollower;
             IdUserFollowee = idUserFollowee;
@@ -14,8 +14,8 @@ namespace FirstApp
             Email = email;
         }
 
-        public int IdUserFollower { get; private set; }
-        public int IdUserFollowee { get; private set; }
+        public string IdUserFollower { get; private set; }
+        public string IdUserFollowee { get; private set; }
         public DateTime FollowedAt { get; private set; }
         public string Email { get; private set; }
     }
